@@ -5,3 +5,8 @@ Miembros del Equipo:
     Alejandro Azuaje
     Nicolle Llerena
     Marcel Mejías
+
+Modelo de Dominio:
+Imágenes del diagrama de clases
+
+Imágenes del diagrama de estado
