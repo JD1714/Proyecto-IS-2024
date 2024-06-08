@@ -1,13 +1,13 @@
 Proyecto IS-2024
-Miembros del Equipo:
-
-    José Campos
-    Alejandro Azuaje
-    Nicolle Llerena
-    Marcel Mejías
-
+Equipo:
+José Campos
+Alejandro Azuaje
+Nicolle Llerena
+Marcel Mejías
 Modelo de Dominio:
+Diagramas de clases:
 
-    Imágenes del diagrama de clases
+[Diagrama de clases](esbozo_diagrama_de_clases.png)
+Diagramas de estado:
 
-    Imágenes del diagrama de estado
+[Diagrama de estado](esbozo_diagrama_estados.png)
