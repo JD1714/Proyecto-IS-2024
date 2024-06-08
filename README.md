@@ -5,9 +5,9 @@ Alejandro Azuaje
 Nicolle Llerena
 Marcel Mejías
 Modelo de Dominio:
-Diagramas de clases:
+  Diagramas de clases:
 
-[Diagrama de clases](esbozo_diagrama_de_clases.png)
-Diagramas de estado:
+  [Diagrama de clases](esbozo_diagrama_de_clases.png)
+  Diagramas de estado:
 
-[Diagrama de estado](esbozo_diagrama_estados.png)
+  [Diagrama de estado](esbozo_diagrama_estados.png)
