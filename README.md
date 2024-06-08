@@ -7,6 +7,7 @@ Miembros del Equipo:
     Marcel Mejías
 
 Modelo de Dominio:
-Imágenes del diagrama de clases
 
-Imágenes del diagrama de estado
+    Imágenes del diagrama de clases
+
+    Imágenes del diagrama de estado
