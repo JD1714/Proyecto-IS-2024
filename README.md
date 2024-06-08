@@ -1,13 +1,19 @@
-Proyecto IS-2024\n
-Equipo:
-José Campos\n
-Alejandro Azuaje\n
-Nicolle Llerena\n
-Marcel Mejías\n
-Modelo de Dominio:\n
-  Diagramas de clases:\n
+# Proyecto IS-2024
+## Equipo:
 
-  [Diagrama de clases](esbozo_diagrama_de_clases.png)\n
-  Diagramas de estado:\n
+José Campos
 
-  [Diagrama de estado](esbozo_diagrama_estados.png)\n
+Alejandro Azuaje
+
+Nicolle Llerena
+
+Marcel Mejías
+
+## Modelo de Dominio:
+  ### Diagramas de clases:
+
+  [Diagrama de clases](esbozo_diagrama_de_clases.png)
+  
+  ### Diagramas de estado:
+
+  [Diagrama de estado](esbozo_diagrama_estados.png)
