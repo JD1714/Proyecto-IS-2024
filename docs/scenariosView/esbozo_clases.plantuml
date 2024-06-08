@@ -1,0 +1,63 @@
+@startuml Reto07
+/'Crear una primera versión de diagrama de clases del modelo del dominio del proyecto. Para lograr esto puede seguir los siguientes pasos:
+1.Listar a lo sumo cuatro (4) clases conceptuales candidatas
+2.Representarlas en un diagrama de clases
+3.Añadir las asociaciones necesarias para registrar las relaciones importantes
+4.Añadir los atributos necesarios para satisfacer los requisitos de información
+
+Para identificar las clases conceptuales puede utilizar alguna de las siguientes técnicas:
+1.Descripción Informal
+2.Análisis clásico
+3.Análisis del Dominio
+'/
+class Curso_extension{
+- id: interger
+- nombre: string
+- objetivos: List<string>
+- fundamentacion: string
+- perfil_ingreso: string
+- perfil_egreso: string
+- perfil_docente: string
+- estrategias_evuluacion: List<string>
+- requisitos_materiales:List<string>
+- duración: interger
+- estructura_costos: Map<string, float>
+- cronograma_ejecucion: date
+}
+
+class Proponente {
+- tipo_persona : Enum(PersonaNatural, PersonaJuridica)
+- cédula_identidad: string
+- título universitario: string
+- RIF : string
+- certificados_declaracion_islr: List<string>
+- resumen_curricular: string
+- documentos_especificos: List<DocumentoEspecificos>
+
+}
+
+class Administrador {
+- id: interger
+- nombre: string
+- facultad:string
+- capacidad _evaluacion: boolean
+
+}
+
+class Aliado {
+- id: interger
+- tipo_aliado:(AliadoInterno, AliadoExterno)
+- estado: Enum(ConfinesDeLucro, SinFinesDeLucro)
+- porcentaje_lucro: floated
+- documentos_presentados: List<DocumentosPresentados>
+- cronograma_ejecucion: date
+- estructura_costos_ingreso: Map<string, float>
+
+}
+
+Curso_extension "propone"<-- Proponente
+Curso_extension "evaluar"--> Administrador
+Administrador "evaluado por" --> Curso_extension
+Curso_extension "ejecuta" --> Aliado
+Aliado "ejecutado por"--> Curso_extension
+@enduml

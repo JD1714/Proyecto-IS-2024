@@ -1,0 +1,31 @@
+@startuml Reto08
+
+state choice1 <<choice>>
+state choice2 <<choice>>
+state choice3 <<choice>>
+state choice4 <<choice>>
+state choice5 <<choice>>
+
+
+'Estados para Proponente/Aliado'
+[*]-->choice1: Proponente/Aliado?
+choice1 --> Dashboard : Si
+Dashboard --> choice2 : Presentar nueva propuesta?
+choice2 --> Propuesta_presentada : Si
+Propuesta_presentada --> choice3 : Consultar estado?
+choice2 --> Idle: No
+Idle --> choice3: Consultar estado de propuesta?
+choice3 --> Consultando_Estado : Si
+Consultando_Estado --> Dashboard
+choice3 --> [*] : No
+
+'Estados para Administradores'
+choice1 --> choice4 : No, administrador
+choice4 --> Visualizar_propuestas: Administrador
+Visualizar_propuestas --> Evaluacion: Evaluar propuestas
+Evaluacion --> choice5 : Evaluar otra propuesta?
+choice5 --> Visualizar_propuestas: Si
+choice5 --> [*]: No
+
+
+@enduml
