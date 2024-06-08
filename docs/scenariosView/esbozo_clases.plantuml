@@ -10,6 +10,12 @@ Para identificar las clases conceptuales puede utilizar alguna de las siguientes
 2.Análisis clásico
 3.Análisis del Dominio
 '/
+/'Clases conceptuales: 
+Curso de extensión: solución propuesta por la DEU, siendo estas formaciones especiales de interés general dirigidos a la ampliación del conocimiento técnico y profesional, de habilidades u oficios y hasta para el crecimiento cultural, social y personal, no conducente al reconocimiento de créditos académicos.
+Proponente: Persona natural o jurídica la cual puede proponer cursos de extensión 
+Administrador:  Representa a la DEU o a la coordinación de extensión de Facultad quienes evalúan y aprueban el curso de extensión.
+Aliado: puede proponer y ejecutar varios cursos de extensión.
+'/
 class Curso_extension{
 - id: interger
 - nombre: string
