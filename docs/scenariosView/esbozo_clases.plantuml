@@ -15,31 +15,25 @@ Curso de extensión: solución propuesta por la DEU, siendo estas formaciones es
 Proponente: Persona natural o jurídica la cual puede proponer cursos de extensión 
 Administrador:  Representa a la DEU o a la coordinación de extensión de Facultad quienes evalúan y aprueban el curso de extensión.
 Aliado: puede proponer y ejecutar varios cursos de extensión.
+Solicitud Curso: solicitud del curso propuesto por el proponente y evaluado por el administrador
 '/
 class Curso_extension{
 - id: interger
 - nombre: string
 - objetivos: List<string>
 - fundamentacion: string
-- perfil_ingreso: string
-- perfil_egreso: string
-- perfil_docente: string
-- estrategias_evuluacion: List<string>
-- requisitos_materiales:List<string>
+- estrategias_evaluacion: List<string>
 - duración: interger
-- estructura_costos: Map<string, float>
 - cronograma_ejecucion: date
 }
 
 class Proponente {
-- tipo_persona : Enum(PersonaNatural, PersonaJuridica)
 - cédula_identidad: string
 - título universitario: string
 - RIF : string
 - certificados_declaracion_islr: List<string>
 - resumen_curricular: string
 - documentos_especificos: List<DocumentoEspecificos>
-
 }
 
 class Administrador {
@@ -47,23 +41,27 @@ class Administrador {
 - nombre: string
 - facultad:string
 - capacidad _evaluacion: boolean
-
 }
 
 class Aliado {
 - id: interger
-- tipo_aliado:(AliadoInterno, AliadoExterno)
-- estado: Enum(ConfinesDeLucro, SinFinesDeLucro)
 - porcentaje_lucro: floated
 - documentos_presentados: List<DocumentosPresentados>
 - cronograma_ejecucion: date
 - estructura_costos_ingreso: Map<string, float>
-
 }
 
-Curso_extension "propone"<-- Proponente
-Curso_extension "evaluar"--> Administrador
-Administrador "evaluado por" --> Curso_extension
+class SolicitudCurso{
+-NombreCurso : string
+-DuracionCurso: int
+-Cronograma_realizacion: string
+-perfil_docente: string
+-Curriculum: string
+}
+SolicitudCurso "propone"<-- Proponente
+Administrador "evaluar"--> SolicitudCurso
+Curso_extension "evaluado por" --> Administrador
 Curso_extension "ejecuta" --> Aliado
 Aliado "ejecutado por"--> Curso_extension
+SolicitudCurso --|> Curso_extension
 @enduml
