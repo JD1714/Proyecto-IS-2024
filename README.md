@@ -21,3 +21,7 @@ Marcel Mejías
    ### Diagrama de casos de uso:
 
   [Diagrama de casos de uso](docs/scenariosView/Diagrama_de_casos.png)
+
+   ### Vision Board:
+
+  [Vision Board](docs/scenariosView/Vision_Board.png)
