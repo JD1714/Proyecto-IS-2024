@@ -9,7 +9,7 @@ Nicolle Llerena
 
 Marcel Mejías
 
-## Modelo de Dominio:
+## Modelo de Dominio: (Pre-entrega)
   ### Diagramas de clases:
 
   [Diagrama de clases](/docs/scenariosView/esbozo_clases.jpg)
