@@ -29,49 +29,49 @@ Marcel Mejías
   
   ## CU#1
   
-  [Especificación](/docs/scenariosView/CU1Iniciar_sesion.jpg)
+  [Especificación](/docs/scenariosView/CU1Iniciarsesion.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#1.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU1.jpg)
 
   ## CU#2
   
-  [Especificación](/docs/scenariosView/CU2Registrar_curso.jpg)
+  [Especificación](/docs/scenariosView/CU2Registrarcurso.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/EstadoCU#2.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU2.jpg)
 
   ## CU#3
   
   [Especificación](/docs/scenariosView/CU3Consultarinformaciondecurso.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#3.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU3.jpg)
 
   ## CU#4
   
   [Especificación](/docs/scenariosView/CU_4_Evaluar_curso.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#4.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU4.jpg)
 
   ## CU#5
   
-  [Especificación](/docs/scenariosView/CU_5_Consultar_informacion_usuario.jpg)
+  [Especificación](/docs/scenariosView/CU5Consultarinformacionusuario.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#5.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU5.jpg)
 
   ## CU#6
   
-  [Especificación](/docs/scenariosView/CU_6_Expediente_Usuario.jpg)
+  [Especificación](/docs/scenariosView/CU6ExpedienteUsuario.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#6.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU6.jpg)
 
   ## CU#7
   
-  [Especificación](/docs/scenariosView/CU_7_Ejecutar_curso.jpg)
+  [Especificación](/docs/scenariosView/CU7Ejecutarcurso.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#7.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU7.jpg)
 
   ## CU#8
   
-  [Especificación](/docs/scenariosView/CU_8_Cerrar_sesion.jpg)
+  [Especificación](/docs/scenariosView/CU8Cerrarsesion.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#8.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU8.jpg)
   
