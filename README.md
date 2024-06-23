@@ -37,7 +37,7 @@ Marcel Mejías
   
   [Especificación](/docs/scenariosView/CU2Registrar_curso.jpg)
 
-  [Diagrama de estado](/docs/scenariosView/Estado_CU#2.jpg)
+  [Diagrama de estado](/docs/scenariosView/EstadoCU#2.jpg)
 
   ## CU#3
   
