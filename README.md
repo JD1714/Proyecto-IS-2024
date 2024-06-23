@@ -78,5 +78,5 @@ Marcel Mejías
 
   ### Prototipo Interfaz:
 
-  [Prototipo Interfaz](/docs/scenariosView/PrototipoInterfazEquipo1.pdf)
+  [Prototipo Interfaz](docs/scenariosView/PrototipoInterfaz.pdf)
   
