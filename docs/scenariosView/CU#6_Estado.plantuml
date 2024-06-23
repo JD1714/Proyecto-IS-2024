@@ -1,0 +1,12 @@
+@startuml CU#6
+[*] --> Ver_expediente
+state a <<choice>>
+
+Ver_expediente--> a:¿Ha realizado acciones?
+a-->Mostrar_historial_de_acciones: [Si]
+a-->Mostrar_expediente_vacio: [No]
+Mostrar_historial_de_acciones-->Ver_detalles
+
+Ver_detalles --> [*]
+Mostrar_expediente_vacio --> [*]
+@enduml

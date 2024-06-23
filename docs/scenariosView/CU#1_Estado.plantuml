@@ -1,0 +1,18 @@
+@startuml CU#1
+
+state 1 <<choice>>
+state 2 <<choice>>
+state 3 <<choice>>
+
+[*] --> Inicio_sesion : Inicia la aplicacion
+Inicio_sesion --> 3 :Recuerda sus credenciales?
+3 --> 1 : Si. Ingresan las credenciales
+3 --> Reestablecer_credenciales : No
+Reestablecer_credenciales --> Inicio_sesion
+1 --> Interfaz_principal: Credenciales validas
+1 --> Error : Credenciales invalidas
+Error --> 2: Reintentar?
+2 -> Inicio_sesion: Si
+2 -> [*]: No
+Interfaz_principal --> [*]
+@enduml

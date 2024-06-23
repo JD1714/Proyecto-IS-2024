@@ -1,0 +1,13 @@
+@startuml CU#8
+[*] --> Cerrar_Sesion
+state a <<choice>>
+
+Cerrar_Sesion--> a:¿Sesion iniciada?
+a-->Sesion_Cerrada: [Si]
+a-->Sesion_no_activa: [No]
+Sesion_Cerrada--> Pantalla_de_inicio
+Sesion_no_activa--> Iniciar_Sesion
+Iniciar_Sesion--> Cerrar_Sesion
+
+Pantalla_de_inicio --> [*]
+@enduml

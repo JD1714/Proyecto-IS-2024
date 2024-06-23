@@ -1,0 +1,17 @@
+@startuml CU#3
+
+state 1 <<choice>>
+state 2 <<choice>>
+state 3 <<choice>>
+
+[*] --> Consulta_Curso : Selecciona Consultar curso
+Consulta_Curso -> Formulario_Busqueda : Se busca el curso a consultar
+Formulario_Busqueda -> 1 : Se encontro el curso?
+1 ---> Mostrando_Detalles_Curso : Si
+1 ---> 3 : No, buscar otro curso?
+3 --> Consulta_Curso : Si
+3 --> [*] : No
+Mostrando_Detalles_Curso --> 2 : Buscar otro curso?
+2 --> Consulta_Curso : Si
+2 --> [*] : No
+@enduml

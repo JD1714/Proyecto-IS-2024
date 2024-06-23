@@ -1,0 +1,24 @@
+@startuml   CU#2
+
+[*] --> Buscar_Curso
+
+state a <<choice>>
+
+Buscar_Curso --> a: ¿existe?
+a --> Curso_Existente: [si]
+a --> Registrar_Curso: [no]
+
+Curso_Existente --> Registro_del_Curso_Terminado: Selecciona curso existente
+Registro_del_Curso_Terminado --> [*]
+
+Registrar_Curso --> Sistema_Envia_Formulario:  Registrar el nuevo curso
+Sistema_Envia_Formulario --> Validar_Informacion_Formulario: Completar formulario
+
+state b <<choice>>
+
+Validar_Informacion_Formulario --> b: ¿Informacion es valida?
+b --> Corregir_Formulario : [no es valida]
+b --> Registro_del_Curso_Terminado: [es valida]
+Corregir_Formulario --> Validar_Informacion_Formulario
+
+@enduml

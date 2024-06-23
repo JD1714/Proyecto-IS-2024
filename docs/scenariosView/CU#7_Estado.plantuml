@@ -1,0 +1,13 @@
+@startuml CU#7
+[*] --> Ejecutar_curso
+Ejecutar_curso--> Formulario_de_ejecucion
+state a <<choice>>
+
+Formulario_de_ejecucion--> a:¿Informacion correcta?
+a-->Enviar_informacion: [Si]
+a-->Corregir_Formulario: [No]
+Enviar_informacion--> Curso_listo_para_ejecucion
+Corregir_Formulario--> a:¿Informacion correcta?
+
+Curso_listo_para_ejecucion --> [*]
+@enduml

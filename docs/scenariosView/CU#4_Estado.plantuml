@@ -1,0 +1,15 @@
+@startuml CU#4
+
+state 1 <<choice>>
+state 2 <<choice>>
+
+[*] --> Evaluar_Curso
+Evaluar_Curso -> Formulario_Evaluacion : Se selecciona un curso
+Formulario_Evaluacion -> Enviar_Evaluacion : Se llena el formulario
+Enviar_Evaluacion --> 1 : Hay errores en la evaluacion?
+1 --> Formulario_Evaluacion : Si, se corrigen los errores
+1 --> Evaluacion_Concluida: No
+Evaluacion_Concluida --> 2: Evaluar otro curso?
+2 --> Evaluar_Curso : Si
+2 --> [*] : No
+@enduml

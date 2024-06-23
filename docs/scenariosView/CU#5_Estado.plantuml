@@ -1,0 +1,11 @@
+@startuml CU#5
+
+state 1 <<choice>>
+
+[*] --> Buscar_usuario : Se selecciona la opcion de consultar usuario
+Buscar_usuario --> 1 : Se ingresa el ID (C.I) del usuario
+1 --> Desplegar_informacion_usuario: Usuario conseguido
+1 ---> [*] : Usuario no conseguido
+Desplegar_informacion_usuario --> [*]
+
+@enduml
