@@ -25,6 +25,7 @@ Marcel Mejías
    ### Vision Board:
 
   [Vision Board](docs/scenariosView/Vision_Board.png)
+  
   ### Especificación de los CU principales y diagrama de estado
   
   ## CU#1
@@ -74,4 +75,8 @@ Marcel Mejías
   [Especificación](/docs/scenariosView/CU8Cerrarsesion.jpg)
 
   [Diagrama de estado](/docs/scenariosView/EstadoCU8.jpg)
+
+  ### Prototipo Interfaz:
+
+  [Prototipo Interfaz](/docs/scenariosView/PrototipoInterfazEquipo1.pdf)
   
