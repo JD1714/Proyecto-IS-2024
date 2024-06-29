@@ -1,0 +1,52 @@
+@startuml Casos_Final
+state fork1 <<fork>>
+state fork2 <<fork>>
+state fork3 <<fork>>
+state Opcion1 <<choice>>
+state Opcion2 <<choice>>
+state Opcion3 <<choice>>
+state Opcion4 <<choice>>
+state Opcion5 <<choice>>
+state Opcion6 <<choice>>
+state Opcion7 <<choice>>
+
+[*] -> Opcion1 : Iniciar sesión
+Opcion1 -> Registrar_Usuario : ¿Registrarse?
+Registrar_Usuario -> Usuario_Registrado 
+Usuario_Registrado --> fork1
+Opcion1 -> Recuperar_Usuario : ¿Recuperar usuario?
+Opcion1 -> fork1 : Ya posee usuario
+Recuperar_Usuario --> Información_usuario : Obtener_Datos
+Información_usuario --> Usuario_Recuperado : Al ser recuperado
+Usuario_Recuperado --> Opcion1
+fork1 --> Sesión_iniciada
+Sesión_iniciada -> Dashboard : Accede_al_sistema
+Dashboard --> Información_usuario: Disponible
+Información_usuario -> Expediente_Usuario : Disponible
+Dashboard --> fork2
+fork2 --> Opcion2: ¿Consultar_Informacion_Del_Usuario?
+Opcion2--> Información_usuario: Si
+Opcion2-> Dashboard : No
+fork2 --> Opcion3 : ¿Proponer_Curso?
+Opcion3 --> Registrar_Curso : Si
+Opcion3 -> Dashboard: No
+Registrar_Curso --> Curso_Registrado
+Curso_Registrado --> Información_Curso: Disponible
+fork2 -->Opcion4: ¿Evaluar curso?
+Opcion4 --> Dashboard: No
+Opcion4 --> Curso_Registrado: Si
+Curso_Registrado --> fork3
+fork3 --> Opcion5 : Al ser evaluado
+Opcion5 --> Generar_aval_tecnico : Al ser aprobado
+Generar_aval_tecnico --> Generar_carta_intención
+Generar_carta_intención --> Expediente_Usuario : Es añadido a
+Opcion5 --> Opcion3 : Al ser denegado
+fork2 -->Opcion6 : ¿Desea_Consultar_Informacion_Curso?
+Opcion6 --> Información_Curso : Si
+Opcion6 --> Dashboard: No
+fork2 --> Opcion7 : ¿Desea ejecutar curso?
+Opcion7 --> Curso_Registrado :Si
+fork3 --> Curso_Ejecutado : Al ser ejecutado
+Opcion7 -->Dashboard :No 
+Dashboard --> [*] : Cerrar Sesión
+@endl
