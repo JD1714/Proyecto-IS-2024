@@ -16,7 +16,7 @@ Marcel Mejías
   
   ### Diagramas de estado:
 
-  [Diagrama de estado](docs/scenariosView/clases_final.png)
+  [Diagrama de estado](docs/scenariosView/estados_final.png)
 
    ### Diagrama de casos de uso:
 
