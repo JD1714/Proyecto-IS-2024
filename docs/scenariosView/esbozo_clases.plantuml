@@ -17,51 +17,51 @@ Administrador:  Representa a la DEU o a la coordinación de extensión de Facult
 Aliado: puede proponer y ejecutar varios cursos de extensión.
 Solicitud Curso: solicitud del curso propuesto por el proponente y evaluado por el administrador
 '/
-class Curso_extension{
-- id: interger
-- nombre: string
-- objetivos: List<string>
-- fundamentacion: string
-- estrategias_evaluacion: List<string>
-- duración: interger
-- cronograma_ejecucion: date
+class Curso_extensión{
+id
+nombre
+objetivos
+fundamentacion
+estrategias_evaluacion
+duración
+cronograma_ejecucion
 }
 
 class Proponente {
-- cédula_identidad: string
-- título universitario: string
-- RIF : string
-- certificados_declaracion_islr: List<string>
-- resumen_curricular: string
-- documentos_especificos: List<DocumentoEspecificos>
+cédula_identidad
+título universitario
+RIF
+certificados_declaracion_islr
+resumen_curricular
+documentos_especificos
 }
 
 class Administrador {
-- id: interger
-- nombre: string
-- facultad:string
-- capacidad _evaluacion: boolean
+id
+nombre
+facultad
+capacidad _evaluacion
 }
 
 class Aliado {
-- id: interger
-- porcentaje_lucro: floated
-- documentos_presentados: List<DocumentosPresentados>
-- cronograma_ejecucion: date
-- estructura_costos_ingreso: Map<string, float>
+id
+porcentaje_lucro
+documentos_presentados
+cronograma_ejecucion
+estructura_costos_ingreso
 }
 
 class SolicitudCurso{
--NombreCurso : string
--DuracionCurso: int
--Cronograma_realizacion: string
--perfil_docente: string
--Curriculum: string
+NombreCurso
+DuracionCurso
+Cronograma_realizacion
+perfil_docente
+Curriculum
 }
-SolicitudCurso "propone"<-- Proponente
-Administrador "evaluar"--> SolicitudCurso
-Curso_extension "evaluado por" --> Administrador
-Curso_extension "ejecuta" --> Aliado
-Aliado "ejecutado por"--> Curso_extension
-SolicitudCurso --|> Curso_extension
+
+SolicitudCurso <--"1..*" Proponente : Propone
+Administrador "evaluar"-->SolicitudCurso
+Curso_extensión -->"1..*" Administrador: evaluado por
+Curso_extensión  *-- "1..*" Aliado : ejecutado por
+SolicitudCurso --|> Curso_extensión
 @enduml
