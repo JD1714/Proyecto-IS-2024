@@ -10,17 +10,26 @@ Nicolle Llerena
 Marcel Mejías
 
 ## Modelo de Dominio: (Pre-entrega)
-  ### Diagramas de clases:
+  
+  ### Diagramas de clases (Final):
+
+  [Diagrama de clases](/docs/scenariosView/Diagrama_clases.png)
+
+  ### Diagramas de clases (Esbozo):
 
   [Diagrama de clases](/docs/scenariosView/esbozo_clases.png)
   
-  ### Diagramas de estado:
+  ### Diagramas de estado (Final):
 
   [Diagrama de estado](docs/scenariosView/estados_final.png)
 
-   ### Diagrama de casos de uso:
+   ### Diagrama de casos de uso (Final):
 
   [Diagrama de casos de uso](docs/scenariosView/casos-de-usos_final.jpg)
+   
+   ### Diagrama de casos de uso (Esbozo):
+
+  [Diagrama de casos de uso](docs/scenariosView/cu_esbozos.jpg)
 
    ### Vision Board:
 
