@@ -12,7 +12,7 @@ Marcel Mejías
 ## Modelo de Dominio: (Pre-entrega)
   ### Diagramas de clases:
 
-  [Diagrama de clases](/docs/scenariosView/esbozo_clases.jpg)
+  [Diagrama de clases](/docs/scenariosView/esbozo_clases.png)
   
   ### Diagramas de estado:
 
