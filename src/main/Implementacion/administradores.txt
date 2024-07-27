@@ -1,0 +1,18 @@
+Correo: jd@gmail.com
+Contraseña: 123
+RIF: 123
+Organización: ula
+Facultad: 123
+--------------
+Correo: 123@.com
+Contraseña: 123
+RIF: 123
+Organización: 123
+Facultad: 123
+--------------
+Correo: aaa@gmail.com
+Contraseña: 123
+RIF: 123
+Organización: 123
+Facultad: 123
+--------------
