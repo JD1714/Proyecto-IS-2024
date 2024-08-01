@@ -25,7 +25,7 @@ Marcel Mejías
 
    ### Diagrama de casos de uso (Final):
 
-  [Diagrama de casos de uso](docs/scenariosView/casos-de-usos_final.jpg)
+  [Diagrama de casos de uso](docs/scenariosView/caso_uso_final.jpg)
    
    ### Diagrama de casos de uso (Esbozo):
 
